@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Plane</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <h1 id="title">Flappy Plane ✈️</h1>
+            <p id="score-display">0</p>
+            <div id="start-screen" class="screen">
+                <h2>Pronto para voar?</h2>
+                <p>Pressione ESPAÇO ou clique para pular.</p>
+                <button id="start-btn">Começar Jogo</button>
+            </div>
+            <div id="game-over-screen" class="screen hidden">
+                <img src="gameover.jpg" alt="Game Over" id="game-over-img">
+                <h2>Fim de Jogo!</h2>
+                <p>Sua pontuação final: <span id="final-score">0</span></p>
+                <button id="restart-btn">Tentar Novamente</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
